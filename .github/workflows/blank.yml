@@ -40,8 +40,6 @@ jobs:
   my-job2:
     strategy:
       matrix:
-        fruit: [apple, pear]
-        animal: [cat, dog]
         include:
           - color: green
           - color: pink
