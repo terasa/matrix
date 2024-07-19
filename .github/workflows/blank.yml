@@ -33,8 +33,10 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
-      - name: say it
-        run: echo ${{ matrix.site }} ${{ matrix.datacenter }}
+      - name: s1
+        run: echo '### S1 🚀' >> $GITHUB_STEP_SUMMARY
+      - name: s2
+        run: echo '### S2 🚀' >> $GITHUB_STEP_SUMMARY
 
   test:
     runs-on: ubuntu-latest
@@ -46,8 +48,8 @@ jobs:
         uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
-      - name: say it
-        run: echo ${{ matrix.site }} ${{ matrix.datacenter }}
+      - name: s3
+        run: echo '### S3 🚀' >> $GITHUB_STEP_SUMMARY
         
         
   # This workflow contains a single job called "build"
