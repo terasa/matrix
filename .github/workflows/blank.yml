@@ -37,6 +37,8 @@ jobs:
         run: echo '### S1 🚀' >> $GITHUB_STEP_SUMMARY
       - name: s2
         run: echo '### S2 🚀' >> $GITHUB_STEP_SUMMARY
+      - name: s3
+        run: exit 1
 
   test:
     runs-on: ubuntu-latest
